@@ -2118,7 +2118,7 @@ int64_t GetBlockValue(int nHeight)
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         if (nHeight <= 200 && nHeight > 0)
-            return 250000 * COIN;
+            return 20000000 * COIN;
     }
     if (IsTreasuryBlock(nHeight)) {
         LogPrintf("GetBlockValue(): this is a treasury block\n");
@@ -2130,15 +2130,15 @@ int64_t GetBlockValue(int nHeight)
 
     else {
         if (nHeight == 0) {
-            nSubsidy = 210000 * COIN;
+            nSubsidy = 15000000 * COIN;
         } else if (nHeight <= 5 && nHeight > 1) { //First POW phase
-            nSubsidy = 210000 * COIN;
+            nSubsidy = 1000000 * COIN;
         } else if (nHeight <= 200 && nHeight > 5) { //First POW phase
-            nSubsidy = 0 * COIN;
+            nSubsidy = 5000 * COIN;
         } else if (nHeight <= 10079 && nHeight > 200) {
-            nSubsidy = 1 * COIN;
+            nSubsidy = 20000 * COIN;
         } else if (nHeight > 10079) {
-            nSubsidy = 2 * COIN;
+            nSubsidy = 10000 * COIN;
         }
 
         int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
