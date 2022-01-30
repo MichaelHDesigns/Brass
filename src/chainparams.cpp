@@ -129,7 +129,7 @@ public:
         nTargetSpacing = 1 * 30;          // Brass: 30 seconds
         nPOSTargetSpacing = 1 * 60;		 // Brass: 1 minutes
         nPOSDGWBlock = 201;
-        nMaturity = 20;                     // 5 Conf to mature coins
+        nMaturity = 6;                     // 5 Conf to mature coins
         nMasternodeCountDrift = 20;        //Was 20
         nMasternodeCollateralAmt = 50000; //masternode collateral 5K
         nMaxMoneyOut = 100000000 * COIN;  //100m coins minted
@@ -264,7 +264,7 @@ public:
         nTargetTimespan = 1 * 60 * 60; // Brass: retarget every 1 hours
         nTargetSpacing = 1 * 30;          // Brass: 30 seconds
         nLastPOWBlock = 200;
-        nMaturity = 10;
+        nMaturity = 6;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 100000000 * COIN;
